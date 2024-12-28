@@ -7,4 +7,6 @@ imageio
 plyfile
 opencv-python
 sharedarray
+#numpy==1.21.6
+numpy==1.26.0
 git+https://github.com/openai/CLIP.git

@@ -68,6 +68,7 @@ class Voxelizer:
                 raise ValueError()
         rotation_matrix[:3, :3] = rot_mat
         # 2. Scale and translate to the voxel space.
+        # print("Voxel Size =", self.voxel_size, "Type:", type(self.voxel_size))
         scale = 1 / self.voxel_size
         if self.use_augmentation and self.scale_augmentation_bound is not None:
             scale *= np.random.uniform(*self.scale_augmentation_bound)
